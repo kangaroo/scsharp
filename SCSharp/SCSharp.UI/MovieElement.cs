@@ -33,7 +33,10 @@ using System.IO;
 using System.Text;
 using System.Threading;
 
-using SdlDotNet;
+using SdlDotNet.Core;
+using SdlDotNet.Graphics;
+using SdlDotNet.Input;
+
 using System.Drawing;
 
 namespace SCSharp.UI
@@ -141,7 +144,8 @@ namespace SCSharp.UI
 				else
 					zoom = vert_zoom;
 
-				surf.Scale (zoom);
+				// FIXME: NewSDL
+				// surf.Scale (zoom);
 			}
 
 			if (dim != 0) {

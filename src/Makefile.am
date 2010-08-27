@@ -2,7 +2,7 @@ MCSFLAGS= -debug
 MCS= gmcs
 
 PROGRAM=scsharp.exe
-PROGRAM_REFS= -r:../SCSharp/SCSharp.UI.dll -r:../SCSharp/SCSharp.dll -r:../sdldotnet-bin/SdlDotNet.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll -r:System.Configuration.dll
+PROGRAM_REFS= -r:../SCSharp/SCSharp.UI.dll -r:../SCSharp/SCSharpLib.dll -r:../sdldotnet-bin/SdlDotNet.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll -r:System.Configuration.dll
 
 EXTRA_DIST=scsharp.exe.config-example mono.sh
 

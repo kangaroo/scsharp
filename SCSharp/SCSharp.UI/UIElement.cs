@@ -34,7 +34,10 @@ using System.IO;
 using System.Text;
 using System.Collections.Generic;
 
-using SdlDotNet;
+using SdlDotNet.Core;
+using SdlDotNet.Graphics;
+using SdlDotNet.Input;
+
 
 namespace SCSharp.UI
 {
