@@ -235,7 +235,7 @@ namespace SCSharp.UI
 #if !RELEASE
 			if (debug_dirty) {
 				paintingSurface.Fill (dirty, Color.Red);
-// newsdl				paintingSurface.Flip ();
+				paintingSurface.Update ();
 			}
 #endif
 			paintingSurface.Fill(dirty, Color.Black);
@@ -257,7 +257,7 @@ namespace SCSharp.UI
 			}
 #endif
 
-// newsdl		paintingSurface.Flip ();
+			paintingSurface.Update ();
 
 			paintingSurface.ClipRectangle = paintingSurface.Rectangle;
 			dirty = Rectangle.Empty;
