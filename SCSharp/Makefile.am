@@ -1,14 +1,14 @@
 MCSFLAGS= -debug -d:DEBUG
 MCS=gmcs
 
-SCSHARPDLL=SCSharp.dll
+SCSHARPDLL=SCSharpLib.dll
 SCSHARPDLL_REFS=
 
 SCSHARPSMKDLL=SCSharp.Smk.dll
-SCSHARPSMKDLL_REFS=-r:SCSharp.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll
+SCSHARPSMKDLL_REFS=-r:SCSharpLib.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll
 
 SCSHARPUIDLL=SCSharp.UI.dll
-SCSHARPUIDLL_REFS= -r:SCSharp.dll -r:SCSharp.Smk.dll -r:../sdldotnet-bin/SdlDotNet.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll -r:System.Configuration.dll
+SCSHARPUIDLL_REFS= -r:SCSharpLib.dll -r:SCSharp.Smk.dll -r:../sdldotnet-bin/SdlDotNet.dll -r:../sdldotnet-bin/Tao.Sdl.dll -r:System.Drawing.dll -r:System.Configuration.dll
 
 SCSHARPUIDLL_RES=SCSharp.UI/credits.txt
 # XXX should autogenerate the next one from the previous one
