@@ -143,7 +143,7 @@ namespace SCSharp.UI
 					if (fullscreen)
 						paintingSurface = Video.SetVideoMode (SCREEN_RES_X, SCREEN_RES_Y);
 					else {
-// newsdl						paintingSurface = Video.SetVideoModeWindow (SCREEN_RES_X, SCREEN_RES_Y);
+						paintingSurface = Video.SetVideoMode (SCREEN_RES_X, SCREEN_RES_Y);
 					}
 
 					Invalidate ();
